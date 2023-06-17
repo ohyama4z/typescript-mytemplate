@@ -3,14 +3,14 @@ env:
   es2021: true
   node: true
 extends:
-  - plugin:vue/essential
   - standard
+  - plugin:@typescript-eslint/recommended
+  - plugin:@typescript-eslint/recommended-requiring-type-checking
 parserOptions:
   ecmaVersion: latest
-  parser: '@typescript-eslint/parser'
+  parser: "@typescript-eslint/parser"
   sourceType: module
   project: ./tsconfig.json
 plugins:
-  - vue
-  - '@typescript-eslint'
+  - "@typescript-eslint"
 rules: {}
