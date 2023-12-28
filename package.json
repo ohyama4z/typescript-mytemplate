@@ -7,9 +7,17 @@
     "lint": "biome lint ./src",
     "lint-fix": "biome check --apply ./src"
   },
+
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-fix && npm run build"
+    }
+  },
+
   "devDependencies": {
     "@biomejs/biome": "1.4.1",
     "biome": "^0.3.3",
+    "husky": "^8.0.3",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   }
