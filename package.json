@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "lint": "npm run biome -- lint ./src",
-    "lint-fix": "npm run biome -- check --apply ./src"
+    "build": "tsc",
+    "lint": "biome lint ./src",
+    "lint-fix": "biome check --apply ./src"
   },
   "devDependencies": {
     "@biomejs/biome": "1.4.1",
