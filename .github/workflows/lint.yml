@@ -14,6 +14,6 @@ jobs:
 
     - uses: volta-cli/action@v1
 
-    - run: npm install
-    - name: 静的解析とフォーマット
-      run: npm run lint-fix
+    - run: npm ci
+    - name: 静的解析(Biome)
+      run: npm run lint
